@@ -25,7 +25,7 @@ function displayModal(movies) {
 btnSearch.addEventListener("click", function() {
     var contentSearch = document.getElementById('title').value
     var apiKey = "af8e771f"
-    var url = "http://www.omdbapi.com/?t=" + contentSearch + "&apikey=" + apiKey
+    var url = "https://www.omdbapi.com/?t=" + contentSearch + "&apikey=" + apiKey
     var request = fetch(url)
     request
         .then((data) => data.json())
